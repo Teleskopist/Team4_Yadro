@@ -75,8 +75,6 @@ static void runScan(const std::string& home) {
 
     scan(home, media);
 
-    std::cout << home << std::endl;
-
     std::ofstream out(home + "/.media_files/media.json");
     out << "{\n";
     const std::vector<std::string> order = {"audio", "video", "images"};
